@@ -205,14 +205,22 @@ header nav {
 .thirdSec {
   background-color: #f8f8f8;
   width: 100%;
-  height: 200vh;
   overflow-x: hidden;
-  padding: 0 3rem 7rem 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
   position: relative;
+}
+
+.thirdSec1 {
+  height: 80vh;
+  padding: 0 3rem 7rem 3rem;
+}
+
+.thirdSec2 {
+  height: 180vh;
+  padding: 3rem 3rem 7rem 3rem;
 }
 
 .theme-three {
