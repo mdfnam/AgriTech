@@ -257,6 +257,10 @@ header nav {
   width: 6rem;
 }
 
+.serviceImg3 .serviceImg4 {
+  width: 8rem;
+}
+
 .servicePara {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
