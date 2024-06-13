@@ -191,9 +191,10 @@ header nav {
   border: none;
   width: 21.5rem;
   height: 6.5rem;
-  font-family: 'Montserrat';
-  font-style: normal;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
   font-weight: 700;
+  font-style: normal;
   font-size: 2.25rem;
   position: absolute;
   right: 15%;
@@ -222,12 +223,8 @@ header nav {
   margin-top: .2rem;
 }
 
-.serviceCard {
-  background-color: #ffffff;
-  width: 15rem;
-  height: 14rem;
-  filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.1));
-  border-radius: 25px;
+.allText3 {
+  text-align: center;
 }
 
 .serviceDiv {
@@ -236,8 +233,39 @@ header nav {
   justify-content: space-around;
 }
 
-.allText3 {
+.serviceCard {
+  background-color: #ffffff;
+  width: 15rem;
+  height: 14rem;
+  border-radius: 25px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.1));
+  transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.serviceCard:hover {
+  filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.15));
+  transform: scale(1.1);
+}
+
+.serviceImg {
+  width: 6rem;
+}
+
+.servicePara {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.4rem;
+  line-height: 1.4rem;
   text-align: center;
+  color: #000;
 }
 
 /* Fourth Section */
@@ -399,8 +427,8 @@ header nav {
 
 .theme-five {
   position: absolute;
-  top: 39%;
-  left: 3%;
+  top: 37%;
+  left: 5%;
   color: #ffffff;
   font-size: 3rem;
   text-align: center;
@@ -408,5 +436,5 @@ header nav {
   text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
-
+/* Footer */
 
