@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* First Section */
 header {
   width: 100%;
@@ -50,7 +54,7 @@ header nav {
   font-weight: 600;
   font-style: normal;
   text-decoration: none;
-  padding: .8rem 2.5rem;
+  padding: 1.2rem 2.5rem;
   border-radius: 8px;
 }
 
@@ -128,14 +132,21 @@ header nav {
 
 .mainSecBtn {
   position: absolute;
-  top: 85%;
+  top: 86%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-.mainSecBtn a {
-  margin-left: 1rem;
-  margin-right: 1rem;
+.circleBtn {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  text-decoration: none;
+  padding: 1.5rem 1.5rem;
+  border-radius: 50%;
+  color: #D3D3D3;
+  border: 1px solid #D3D3D3;
 }
 
 /* Second Section */
@@ -215,7 +226,7 @@ header nav {
 
 .thirdSec1 {
   height: 80vh;
-  padding: 0 3rem 7rem 3rem;
+  padding: 0 3rem 3rem 3rem;
 }
 
 .thirdSec2 {
@@ -294,6 +305,15 @@ header nav {
   color: #000;
 }
 
+.serviceBtn {
+  display: inline-block;
+  margin-bottom: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: .7rem;
+}
+
 /* Fourth Section */
 .fourthSec {
   width: 100%;
@@ -336,7 +356,7 @@ header nav {
 .fourthSecBtn {
   position: absolute;
   top: 85%;
-  left: 13.3%;
+  left: 6.6%;
   transform: translate(-50%, -50%);
 }
 
@@ -463,4 +483,3 @@ header nav {
 }
 
 /* Footer */
-
