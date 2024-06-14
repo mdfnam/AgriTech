@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,59 +10,79 @@
   <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
   <title>AgriTech</title>
 </head>
+
 <body>
   <main>
-    <!-- Header Section -->
+    <!-- header section -->
     <header>
+
+      <!-- navbar -->
       <nav>
+
+        <!-- navbar first div -->
         <div class="navFirstDiv">
           <h2>AgriTech</h2>
         </div>
+
+        <!-- navbar second div -->
         <div class="navSecondDiv">
-          <a href="index.html">Home</a>
-          <a href="#">About The Project</a>
-          <a href="#">Pages</a>
+          <a href="index.html" class="home">Home</a>
+          <a href="https://github.com/mdfnam/AgriTech" target="_blank" class="about">About The Project</a>
+          <a href="#footerId" class="pages">Pages</a>
+
+          <a href="#" class="dropdownitem dropdownitem1">Service Page</a>
+          <a href="#" class="dropdownitem dropdownitem2">Crops Page</a>
         </div>
+
+        <!-- nvabar third div -->
         <div class="navThirdDiv">
-          <a href="index2.html" class="btn filledBtn">Our Services</a>
-          <a href="#footerId" class="btn singUpBtn">Help</a>
+          <a href="./services.html" class="btn filledBtn">Our Services</a>
+          <a href="./crops.html" class="btn singUpBtn">About Crops</a>
         </div>
       </nav>
-
-      <section class="mainSec">
-        <h1>The Role of Technology in Revolutionizing Agriculture</h1>
-        <p class="theme theme-one">With the help of technology, agriculture is becoming smarter and more sustainable,
-          helping farmers produce more with less effort</p>
-        <div class="mainSecBtn">
-          <a href="#secondSecId" class="circleBtn">
-            <img src="./assets/downArrow.png">
-          </a>
-        </div>
-      </section>
     </header>
 
-    <!-- Second Section -->
+    <!-- first section -->
+    <section class="firstSec">
+      <h1>The Role of Technology in Revolutionizing Agriculture</h1>
+      <p class="theme theme-one">With the help of technology, agriculture is becoming smarter and more sustainable,
+          helping farmers produce more with less effort</p>
+      <div class="firstSecBtn">
+        <a href="#secondSecId" class="circleBtn">
+          <img src="./assets/downArrow.png">
+        </a>
+      </div>
+    </section>
+
+    <!-- second section -->
     <section class="secondSec" id="secondSecId">
-      <div class="secondSecFirstDiv">
+
+      <!-- second section left div -->
+      <div class="secondSecLeftDiv">
         <h2 class="allText allText1">Our Passion for Agriculture Nurturing Growth and Sustaining the Future</h2>
         <p class="theme theme-two">Driven by our love for the land, we nurture growth and cultivate a sustainable future
           for all.</p>
       </div>
 
-      <div class="secondSecSecondDiv">
+      <!-- second section right div -->
+      <div class="secondSecRightDiv">
         <img src="./assets/img.jpeg" alt="a green field" class="tally">
         <button>Since 2024</button>
       </div>
     </section>
 
-    <!-- Third Section -->
-    <section class="thirdSec thirdSec1">
+    <!-- third section -->
+    <section class="thirdSec">
+
+      <!-- third section first div -->
       <div>
         <h2 class="allText allText3">Our Services</h2>
         <p class="theme theme-three">Delivering excellence with every interaction, ensuring your satisfaction is our top
           priority</p>
       </div>
-      <div class="serviceDiv">
+
+      <!-- third section second div -->
+      <div class="servicesCardContainer">
         <div class="serviceCard">
           <img src="./assets/soilMonitoring.png" class="serviceImg">
           <p class="servicePara">Soil<br>Monitoring</p>
@@ -82,22 +103,28 @@
           <p class="servicePara"></p>
         </div>
       </div>
+
+      <!-- third section third div -->
       <div>
-        <a href="./index2.html" class="btn filledBtn serviceBtn">
+        <a href="./services.html" class="btn filledBtn serviceBtn">
           Learn More
-          <img src="./assets/arrow-vector.png" class="arrowImg">
+          <img src="./assets/arrow-vector.png">
         </a>
       </div>
     </section>
 
-    <!-- Fifth Section -->
-    <section class="fifthSec">
-      <div class="fifthSecFirstDiv">
+    <!-- fourth section -->
+    <section class="fourthSec">
+
+      <!-- fourth section first div -->
+      <div class="fourthSecFirstDiv">
         <h2 class="allText allText4">Know More About Crops</h2>
         <p class="theme theme-four">Discover the secrets of thriving crops and sustainable farming. Dive into the world
           of agriculture and enhance your knowledge today!</p>
       </div>
-      <div class="cropsDiv">
+
+      <!-- fourth section second div -->
+      <div class="cropsCardContainer">
         <div class="cropsCard">
           <img src="./assets/rice.jpg" alt="rice field image">
           <div class="img-overlay"></div>
@@ -118,8 +145,8 @@
           <img src="./assets/bananas.jpg" alt="banana field image">
           <div class="img-overlay"></div>
           <h4 class="theme theme-five">Banana</h4>
-          <p class="info">Yellow smiles of sunshine, wrapped in a curved delight.
-            Nature's sweet embrace, a tropical joyous sight.</p>
+          <p class="info">Yellow smiles of sunshine, wrapped in a curved delight. Nature's sweet embrace, a tropical
+            joyous sight.</p>
         </div>
 
         <div class="cropsCard">
@@ -129,11 +156,23 @@
           <p class="info">Cultivating community through the humble cabbage, where every leaf tells a story.</p>
         </div>
       </div>
+
+      <!-- fourth section third div -->
+      <div class="fourthSecThirdDiv">
+        <a href="./crops.html">See all Crops</a>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer id="footerId">
+      <div class="footerSecLeftDiv">
+        <h2>AgriTech</h2>
+        <p class="theme theme-six">This is our IIT Patna Capstone Project for Group-72</p>
+        <img src="./assets/github-icon.png">
+      </div>
+      <div class="footerSecRightDiv">
 
+      </div>
     </footer>
   </main>
 </body>
