@@ -66,37 +66,6 @@ header nav {
   margin-right: 3rem;
 }
 
-.dropdownitem1 {
-  position: absolute;
-  top: 103%;
-  left: 56%;
-  color: var(--lightBlackCol);
-  background-color: var(--websiteBgCol);
-  padding: 1rem;
-  width: 8.2rem;
-  border-radius: .8rem;
-  z-index: 5;
-  opacity: 0;
-}
-
-.dropdownitem2 {
-  position: absolute;
-  top: 160%;
-  left: 56%;
-  color: var(--lightBlackCol);
-  background-color: var(--websiteBgCol);
-  padding: 1rem;
-  width: 8.2rem;
-  border-radius: .8rem;
-  z-index: 5;
-  opacity: 0;
-}
-
-.pages:hover+.dropdownitem,
-.pages:hover+.dropdownitem+.dropdownitem {
-  opacity: 1;
-}
-
 .navThirdDiv a {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -168,7 +137,7 @@ header nav {
 .theme {
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 600;
   font-style: normal;
   font-size: 1rem;
   line-height: 1.5rem;
@@ -195,7 +164,7 @@ header nav {
 .circleBtn {
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 600;
+  font-weight: 900;
   font-style: normal;
   text-decoration: none;
   padding: 1.5rem 1.5rem;
@@ -276,11 +245,6 @@ header nav {
   padding: 0 3rem 3rem 3rem;
 }
 
-/* .thirdSec2 {
-  height: 180vh;
-  padding: 3rem 3rem 7rem 3rem;
-} */
-
 .allText3 {
   text-align: center;
 }
@@ -334,68 +298,18 @@ header nav {
   color: var(--lightBlackCol);
 }
 
-.serviceBtn {
+.arrowBtn {
   display: inline-block;
   display: flex;
   justify-content: center;
   align-items: center;
   column-gap: .7rem;
+  transition: transform 0.5s ease;
 }
 
-/* fourth section */
-/* .fourthSec {
-  width: 100%;
-  height: 65vh;
-  overflow-x: hidden;
-  background-image: url('./assets/section5.jpg');
-  background-size: cover;
-  background-position: left 0px top -180px;
-  background-repeat: no-repeat;
-  opacity: 0.9;
-  position: relative;
+.arrowBtn:hover {
+  transform: scale(1.05);
 }
-
-.fourthSec::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.2);
-}
-
-.fourthSec h3 {
-  color: var(--whiteCol);
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 4.5rem;
-  line-height: 4.5rem;
-  width: 61rem;
-  position: absolute;
-  top: 45%;
-  left: 33%;
-  transform: translate(-50%, -50%);
-  text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-}
-
-.fourthSecBtn {
-  position: absolute;
-  top: 85%;
-  left: 6.6%;
-  transform: translate(-50%, -50%);
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
-} */
 
 /* fourth section */
 .fourthSec {
@@ -445,7 +359,13 @@ header nav {
   border-radius: 25px;
   overflow: hidden;
   position: relative;
+  transition: transform 0.5s ease;
   filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.15));
+}
+
+.cropsCard:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.25));
 }
 
 .cropsCard img {
@@ -459,7 +379,7 @@ header nav {
 
 .img-overlay {
   position: absolute;
-  top: -48%;
+  top: -47.5%;
   right: 0;
   bottom: 0;
   left: 0;
@@ -501,7 +421,7 @@ header nav {
   padding: .5rem .5rem .5rem .5rem;
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 600;
   font-style: normal;
   font-size: 1rem;
   line-height: 1rem;
@@ -531,7 +451,7 @@ footer {
   position: relative;
 }
 
-.footerSecLeftDiv > h2 {
+.footerSecLeftDiv>h2 {
   color: var(--whiteCol);
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -552,5 +472,56 @@ footer {
   left: 10%;
 }
 
-/* github image */
+.footerSecLeftDiv a {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-color: var(--whiteCol);
+  border-radius: .5rem;
+  position: absolute;
+  top: 70%;
+  left: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.footerSecLeftDiv img {
+  width: 2rem;
+}
+
+.footerHeading {
+  color: var(--whiteCol);
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1.75rem;
+  position: absolute;
+  top: 30%;
+  left: 70%;
+}
+
+.footerSubHeading {
+  color: var(--whiteCol);
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.25rem;
+  position: absolute;
+}
+
+.footerSubHeading1 {
+  left: 70%;
+  top: 48%;
+}
+
+.footerSubHeading2 {
+  left: 70%;
+  top: 60%;
+}
+
+.footerSubHeading3 {
+  left: 70%;
+  top: 72%;
+}

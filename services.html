@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AgriTech Services</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="services.css">
   <link rel="stylesheet" href="fonts.css">
   <script src="index.js" defer></script>
   <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
@@ -13,40 +14,47 @@
 
 <body>
   <main>
-    <!-- Header Section -->
+    <!-- header section -->
     <header>
+
+      <!-- navbar -->
       <nav>
+
+        <!-- navbar first div -->
         <div class="navFirstDiv">
           <h2>AgriTech</h2>
         </div>
+
+        <!-- navbar second div -->
         <div class="navSecondDiv">
           <a href="index.html" class="home">Home</a>
-          <a href="https://github.com/mdfnam/AgriTech" target="_blank" class="abt">
-            About The Project
-          </a>
-          <a href="#" class="pages">Pages</a>
-          <a href="#" class="dropdownitem dropdownitem1">Service Page</a>
-          <a href="#" class="dropdownitem dropdownitem2">Crops Page</a>
+          <a href="https://github.com/mdfnam/AgriTech" target="_blank" class="about">About The Project</a>
+          <a href="#footerId" class="pages">Pages</a>
         </div>
+
+        <!-- nvabar third div -->
         <div class="navThirdDiv">
-          <a href="index2.html" class="btn filledBtn">Our Services</a>
-          <a href="#footerId" class="btn singUpBtn">About Crops</a>
+          <a href="./services.html" class="btn filledBtn">Our Services</a>
+          <a href="./crops.html" class="btn singUpBtn">About Crops</a>
         </div>
       </nav>
-
-      <!-- Fourth Section -->
-      <section class="fourthSec">
-        <div class="overlay">
-          <h3>Sustainable Farming Meets Technology: Building a Greener Future</h3>
-          <div class="fourthSecBtn">
-            <a href="#" class="btn unfilledBtn">Contact Us</a>
-          </div>
-        </div>
-      </section>
     </header>
 
-    <!-- Getting Info Section -->
-    <section class="infoSec">
+    <!-- first section -->
+    <section class="firstSecService">
+      <div class="overlay">
+        <h3>Sustainable Farming Meets Technology: Building a Greener Future</h3>
+        <div class="firstSecServiceBtn">
+          <a href="#secondSecService" class="btn unfilledBtn arrowBtn">
+            See Below
+            <img src="./assets/arrow-vector.png">
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- second section -->
+    <section class="secondSec" id="secondSecService">
       <div>
         <h3 class="allText">Getting Information</h3>
       </div>
@@ -67,25 +75,29 @@
       </form>
     </section>
 
-    <!-- Service Section Starts -->
+    <!-- third section -->
     <section class="thirdSec thirdSec2">
+
       <!-- Soil Monitoring -->
       <div>
         <h3 class="allText">Soil Monitoring</h3>
       </div>
-      <div class="serviceDiv">
+      <div class="servicesCardContainer">
         <div class="serviceCard">
           <img src="./assets/soilTemp.png" class="serviceImg">
           <p class="servicePara">Measure Soil Temperature</p>
         </div>
+
         <div class="serviceCard">
           <img src="./assets/soilMoisture.png" class="serviceImg">
           <p class="servicePara">Measure Soil Moisture</p>
         </div>
+
         <div class="serviceCard">
           <img src="./assets/surfaceTemp.png" class="serviceImg">
           <p class="servicePara">Measure Surface Temperature</p>
         </div>
+
         <div class="serviceCard">
           <img src="./assets/historicSoilData.png" class="serviceImg">
           <p class="servicePara">Historic Soil<br>Data</p>
@@ -96,19 +108,22 @@
       <div>
         <h3 class="allText">Weather Monitoring</h3>
       </div>
-      <div class="serviceDiv">
-        <div class="serviceCard serviceCard5">
+      <div class="servicesCardContainer">
+        <div class="serviceCard">
           <img src="./assets/Weather.png" class="serviceImg">
           <p class="servicePara">Get Current<br>Weather</p>
         </div>
+
         <div class="serviceCard">
           <img src="./assets/forecastWeather.png" class="serviceImg">
           <p class="servicePara">Get Forecast<br>Weather</p>
         </div>
-        <div class="serviceCard serviceCard7">
+
+        <div class="serviceCard">
           <img src="./assets/atmosphericPressure.png" class="serviceImg">
           <p class="servicePara">Get Atmospheric Pressure</p>
         </div>
+
         <div class="serviceCard">
           <img src="./assets/humidity.png" class="serviceImg">
           <p class="servicePara">Get<br>Humidity</p>
@@ -116,25 +131,30 @@
       </div>
 
       <!-- Weather Monitoring: Second Section -->
-      <div class="serviceDiv">
+      <div class="servicesCardContainer">
         <div class="serviceCard">
           <img src="./assets/minmaxtemp.png" class="serviceImg">
           <p class="servicePara">Get Min-Max Temperature</p>
         </div>
+
         <div class="serviceCard">
           <img src="./assets/wind.png" class="serviceImg">
           <p class="servicePara">Get Wind Speed<br>and Direction</p>
         </div>
+
         <div class="serviceCard">
           <img src="./assets/clouds.png" class="serviceImg">
           <p class="servicePara">Get Cloudiness<br>Percentage</p>
         </div>
+
         <div class="serviceCard">
           <img src="./assets/rain.png" class="serviceImg">
           <p class="servicePara">Get Rain<br>Volume</p>
         </div>
       </div>
     </section>
+
+
   </main>
 </body>
 
